@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/execute",
+          "url": "https://mc.s10.exacttarget.com/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -33,22 +33,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "96f4d7ac-b66a-487e-a0ee-99d64ed48ce8",
       "save": {
-        "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/journeybuilder/save",
+        "url": "https://mc.s10.exacttarget.com/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/journeybuilder/publish",
+        "url": "https://mc.s10.exacttarget.com/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/journeybuilder/stop",
+        "url": "https://mc.s10.exacttarget.com/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/journeybuilder/validate",
+        "url": "https://mc.s10.exacttarget.com/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
