@@ -8,7 +8,7 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
+            "name": "Push Messages",
           "description": "A Template for a custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "__application_key_from_appcenter_here__",
+      "applicationExtensionKey": "96f4d7ac-b66a-487e-a0ee-99d64ed48ce8",
       "save": {
         "url": "https://<your-domain-here>/journeybuilder/save",
           "verb": "POST",
