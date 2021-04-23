@@ -33,22 +33,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "96f4d7ac-b66a-487e-a0ee-99d64ed48ce8",
       "save": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/save",
+        "url": "https://api.pushy.me/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/publish",
+        "url": "https://api.pushy.me/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/stop",
+        "url": "https://api.pushy.me/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://mc.s10.exacttarget.com/journeybuilder/validate",
+        "url": "https://api.pushy.me/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
