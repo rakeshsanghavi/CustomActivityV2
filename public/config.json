@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://mc.s10.exacttarget.com/journeybuilder/api/v1/execute",
+          "url": "https://mc.s10.exacttarget.com/journeybuilder/v1/notify",
            "verb": "POST",
             "body": "",
             "header": "",
