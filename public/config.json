@@ -24,7 +24,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5",
+          "url": "https://custom-activity-v1.herokuapp.com/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -36,22 +36,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
       "save": {
-        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5",
+        "url": "https://custom-activity-v1.herokuapp.com/execute",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5",
+        "url": "https://custom-activity-v1.herokuapp.com/execute",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5",
+        "url": "https://custom-activity-v1.herokuapp.com/execute",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5",
+        "url": "https://custom-activity-v1.herokuapp.com/execute",
         "verb": "POST",
         "useJwt": true
       }
