@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://mc.s10.exacttarget.com/execute",
+          "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/execute",
            "verb": "POST",
             "body": "",
             "header": "",
