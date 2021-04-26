@@ -24,7 +24,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://dashboard.pushy.me/apps/5fbcf82da87af44e187cb06f",
+          "url": "https://mc.s10.exacttarget.com/activity/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -36,22 +36,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
       "save": {
-        "url": "https://dashboard.pushy.me/apps/5fbcf82da87af44e187cb06f",
+        "url": "https://mc.s10.exacttarget.com/activity/execute/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://dashboard.pushy.me/apps/5fbcf82da87af44e187cb06f",
+        "url": "https://mc.s10.exacttarget.com/activity/execute/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://dashboard.pushy.me/apps/5fbcf82da87af44e187cb06f",
+        "url": "https://mc.s10.exacttarget.com/activity/execute/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://dashboard.pushy.me/apps/5fbcf82da87af44e187cb06f",
+        "url": "https://mc.s10.exacttarget.com/activity/execute/validate",
         "verb": "POST",
         "useJwt": true
       }
