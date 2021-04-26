@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "96f4d7ac-b66a-487e-a0ee-99d64ed48ce8",
+      "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
       "save": {
         "url": "https://mct9813hhqdnlxcbzr0tkgn9rhhm.rest.marketingcloudapis.com/journeybuilder/api/v1/save",
           "verb": "POST",
