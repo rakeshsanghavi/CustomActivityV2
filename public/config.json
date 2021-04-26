@@ -17,10 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}",
-					 "DeviceToken": "{{Contact.Attribute.JourneyEntrySource.DeviceToken}}",
-					 "Data": "{{Contact.Attribute.CustomActivity.Data}}",
-					"Title": "{{Contact.Attribute.CustomActivity.Title}}"
+                    "emailAddress": "akanksha.pandharkame@aress.com"
                 }									
 			],
           "outArguments": [],
