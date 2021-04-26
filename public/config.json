@@ -8,7 +8,7 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Push Messages",
+            "name": "Pushy API Messages",
           "description": "A Template for a custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://mc.s10.exacttarget.com/journeybuilder/v1/notify",
+          "url": "https://mc.s10.exacttarget.com/journeybuilder/api/v1/execute",
            "verb": "POST",
             "body": "",
             "header": "",
