@@ -17,11 +17,14 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}",
+					 "DeviceToken": "{{Contact.Attribute.JourneyEntrySource.DeviceToken}}",
+					 "Data": "{{Contact.Attribute.CustomActivity.Data}}",
+					"Title": "{{Contact.Attribute.CustomActivity.Title}}"
                 }									
 			],
           "outArguments": [],
-          "url": "https://mc.s10.exacttarget.com/activity/execute",
+          "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -33,22 +36,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
       "save": {
-        "url": "https://mc.s10.exacttarget.com/activity/save",
+        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://mc.s10.exacttarget.com/activity/publish",
+        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5y/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://mc.s10.exacttarget.com/activity/stop",
+        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://mc.s10.exacttarget.com/activity/validate",
+        "url": "https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5/validate",
         "verb": "POST",
         "useJwt": true
       }
