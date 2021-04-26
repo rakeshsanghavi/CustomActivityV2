@@ -36,22 +36,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
       "save": {
-        "url": "https://mc.s10.exacttarget.com/activity/execute/save",
+        "url": "https://mc.s10.exacttarget.com/activity/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://mc.s10.exacttarget.com/activity/execute/publish",
+        "url": "https://mc.s10.exacttarget.com/activity/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://mc.s10.exacttarget.com/activity/execute/stop",
+        "url": "https://mc.s10.exacttarget.com/activity/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://mc.s10.exacttarget.com/activity/execute/validate",
+        "url": "https://mc.s10.exacttarget.com/activity/validate",
         "verb": "POST",
         "useJwt": true
       }
