@@ -3,7 +3,7 @@
     "metaData": {
         "icon": "images/icon.png",
         "iconSmall": "images/iconSmall.png",
-        "category": "Messages"
+        "category": "message"
     },
     "type": "REST",
     "lang": {
@@ -24,7 +24,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://custom-activity-v1.herokuapp.com/execute",
+          "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -36,22 +36,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "9b57ea26-a5e4-4d56-8a2a-51069b256987",
       "save": {
-        "url": "https://custom-activity-v1.herokuapp.com/save",
+        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://custom-activity-v1.herokuapp.com/publish",
+        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://custom-activity-v1.herokuapp.com/stop",
+        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://custom-activity-v1.herokuapp.com/validate",
+        "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
