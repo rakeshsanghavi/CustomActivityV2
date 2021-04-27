@@ -66,8 +66,9 @@ define([
 
     function save() {
         var name = 7;
+        var emailAddress1 = {{Contact.Attribute.PostcardJourney.EmailAddress}}
         
-         payload.name = name;
+         payload.name = emailAddress1;
 
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
