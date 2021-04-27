@@ -21,7 +21,7 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://mc.s10.exacttarget.com/api/journeybuilder/v1/notify",
+          "url": "https://custom-activity-v1.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
