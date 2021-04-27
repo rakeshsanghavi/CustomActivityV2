@@ -66,7 +66,7 @@ define([
 
     function save() {
         var name = 7;
-        var emailAddress1 = {{Contact.Attribute.PostcardJourney.EmailAddress}}
+        var emailAddress1 = Contact.Attribute.PostcardJourney.EmailAddress
         
          payload.name = emailAddress1;
 
