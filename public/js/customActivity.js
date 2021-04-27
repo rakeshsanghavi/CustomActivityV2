@@ -4,7 +4,6 @@ define([
     Postmonger
 ) {
     'use strict';
-    app.use("/static", express.static('./static/'));
     var connection = new Postmonger.Session();
     var authTokens = {};
     var payload = {};
