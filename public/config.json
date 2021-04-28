@@ -17,7 +17,9 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.pushyJourney.Title}}"
+                    "Title": "{{Contact.Attribute.pushyJourney.Title}}",
+		    "Data": "{{Contact.Attribute.pushyJourney.Data}}",
+		    "DeviceToken": "{{Contact.Attribute.pushyJourney.DeviceToken}}"
                 }									
 			],
           "outArguments": [],
