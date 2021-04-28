@@ -66,12 +66,12 @@ define([
 
     function save() {
         var name = 7;
-        
+        var email = "akanksha.pandharkame@aress.com";
          payload.name = name;
 
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
-            "emailAddress": "akanksha.pandharkame@aress.com"
+            "emailAddress": email
         }];
         
         payload['metaData'].isConfigured = true;
