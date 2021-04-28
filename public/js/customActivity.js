@@ -75,20 +75,7 @@ define([
 		    "Data": "{{PushyAPIDictionary.Data}}",
 		    "DeviceToken": "{{PushyAPIDictionary.DeviceToken}}"
         }];
-        
-	 var request = require('require');
-            var url = 'https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5';
-            
-            request({
-            url: url,
-                method: "POST",
-                json: payload['arguments'].execute.inArguments
-            }, function(error, response, body){
-            if(!error){
-            console.log(body);
-            }
-            });
-	    
+        	    
         payload['metaData'].isConfigured = true;
 
         console.log(payload);
