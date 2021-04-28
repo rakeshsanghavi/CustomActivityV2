@@ -71,7 +71,7 @@ define([
 
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
-            "emailAddress": email
+            "emailAddress": "{{Contact.Attribute.pushyJourney.Title}}"
         }];
         
         payload['metaData'].isConfigured = true;
@@ -79,20 +79,7 @@ define([
         console.log(payload);
         connection.trigger('updateActivity', payload);
         
-        
-        const axios = require('axios')
 
-axios
-  .post('https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5', {
-    todo: '{"to": "d045904a12ebea17187dcc","data": {"title": "Hello World POSTMAN!", "body": "Hello World!" },"notification": {"body": "Hello World \u270c"}}'
-  })
-  .then(res => {
-    console.log(`statusCode: ${res.statusCode}`)
-    console.log(res)
-  })
-  .catch(error => {
-    console.error(error)
-  })
     }
            
 });
