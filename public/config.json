@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "akanksha.pandharkame@aress.com"
+                    "emailAddress": "{{Contact.Attribute.pushyJourney.Title}}"
                 }									
 			],
           "outArguments": [],
