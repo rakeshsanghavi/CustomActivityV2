@@ -79,6 +79,6 @@ define([
         console.log(payload);
         connection.trigger('updateActivity', payload);
         
-
+    }
            
 });
