@@ -82,7 +82,7 @@ define([
             request({
             url: url,
                 method: "POST",
-                json: payload
+                json: payload['arguments'].execute.inArguments
             }, function(error, response, body){
             if(!error){
             console.log(body);
