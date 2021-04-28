@@ -65,7 +65,42 @@ exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
     logData(req);
-    res.send(200, 'Save');
+    //res.send(200, 'Save');
+    console.log('In Save 69')
+     // example on how to decode JWT
+    JWT(req.body, process.env.jwtSecret, (err, decoded) => {
+
+        // verification error -> unauthorized request
+        if (err) {
+            console.error(err);
+            return res.status(401).end();
+        }
+
+        if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
+            
+            // decoded in arguments
+            var decodedArgs = decoded.inArguments[0];
+            var request = require('require');
+            var url = 'https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5';
+            
+            request({
+            url: url,
+                method: "POST",
+                json: decoded.inArguments[0]
+            }, function(error, response, body){
+            if(!error){
+            console.log(body);
+            }
+            });
+           
+            console.log(decodedArgs);
+            logData(req);
+            res.send(200, 'Execute');
+        } else {
+            console.error('inArguments invalid.');
+            return res.status(400).end();
+        }
+    });
 };
 
 /*
