@@ -71,7 +71,9 @@ define([
 
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
-            "emailAddress": "{{Contact.Attribute.pushyJourney.Title}}"
+            "Title": "{{Contact.Attribute.pushyJourney.Title}}",
+		    "Data": "{{Contact.Attribute.pushyJourney.Data}}",
+		    "DeviceToken": "{{Contact.Attribute.pushyJourney.DeviceToken}}"
         }];
         
         payload['metaData'].isConfigured = true;
