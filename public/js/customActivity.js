@@ -99,7 +99,7 @@ define([
         console.log(payload);
         
         //call pushy
-        var axios = require('axios');
+        
         var data = JSON.stringify({"to":"d045904a12ebea17187dcc","data":{"title":"Hello World Rakesh","body":"Hello Rakesh!"},"notification":{"body":"Hello Rakesh"}});
 
         var config = {
