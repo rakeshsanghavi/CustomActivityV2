@@ -1,3 +1,6 @@
+//added by Rakesh
+var axios = require('axios');
+
 define([
     'postmonger'
 ], function (
