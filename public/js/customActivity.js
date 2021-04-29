@@ -4,6 +4,7 @@ define([
     Postmonger
 ) {
     'use strict';
+
     var connection = new Postmonger.Session();
     var authTokens = {};
     var payload = {};
@@ -12,6 +13,9 @@ define([
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
     connection.on('requestedEndpoints', onGetEndpoints);
+    connection.on('requestedInteraction', onRequestedInteraction);
+    connection.on('requestedTriggerEventDefinition', onRequestedTriggerEventDefinition);
+    connection.on('requestedDataSources', onRequestedDataSources);
 
     connection.on('clickedNext', save);
    
@@ -21,7 +25,25 @@ define([
 
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
+        connection.trigger('requestInteraction');
+        connection.trigger('requestTriggerEventDefinition');
+        connection.trigger('requestDataSources');  
 
+    }
+
+    function onRequestedDataSources(dataSources){
+        console.log('*** requestedDataSources ***');
+        console.log(dataSources);
+    }
+
+    function onRequestedInteraction (interaction) {    
+        console.log('*** requestedInteraction ***');
+        console.log(interaction);
+     }
+
+     function onRequestedTriggerEventDefinition(eventDefinitionModel) {
+        console.log('*** requestedTriggerEventDefinition ***');
+        console.log(eventDefinitionModel);
     }
 
     function initialize(data) {
@@ -65,23 +87,19 @@ define([
     }
 
     function save() {
-        var name = 7;
-        var email = "akanksha.pandharkame@aress.com";
-         payload.name = name;
+        var postcardURLValue = $('#postcard-url').val();
+        var postcardTextValue = $('#postcard-text').val();
 
         payload['arguments'].execute.inArguments = [{
-            "tokens": authTokens,
-            "Title": "{{PushyAPIDictionary.Title}}",
-		    "Data": "{{PushyAPIDictionary.Data}}",
-		    "DeviceToken": "{{PushyAPIDictionary.DeviceToken}}"
+            "tokens": authTokens
         }];
-        	    
+        
         payload['metaData'].isConfigured = true;
 
         console.log(payload);
         connection.trigger('updateActivity', payload);
-        
-
     }
-           
+
+
 });
+     
