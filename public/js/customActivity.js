@@ -97,6 +97,26 @@ define([
         payload['metaData'].isConfigured = true;
 
         console.log(payload);
+        
+        //call pushy
+        var axios = require('axios');
+        var data = JSON.stringify({"to":"d045904a12ebea17187dcc","data":{"title":"Hello World Rakesh","body":"Hello Rakesh!"},"notification":{"body":"Hello Rakesh"}});
+
+        var config = {
+          method: 'post',
+          url: 'https://api.pushy.me/push?api_key=d7d75e43ed88d5a8a4b27ed84548c78c687c0cf2e2c865e6790e58dd293c5ae5',
+          headers: { 
+            'Content-Type': 'application/json'
+          },
+          data : data
+        };
+
+        axios(config)
+        .then((response)=>{
+            console.log(JSON.stringify(response.data))
+          })
+
+        
         connection.trigger('updateActivity', payload);
     }
 
